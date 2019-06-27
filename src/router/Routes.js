@@ -1,4 +1,6 @@
 import Home from '../views/home/Home';
+import AboutMe from '../views/about/AboutMe';
+import Portfolio from '../views/portfolio/Portfolio';
 
 const routes = [
   {
@@ -9,12 +11,12 @@ const routes = [
   {
     path:'/about',
     name:'About',
-    component:Home
+    component:AboutMe
   },
   {
     path:'/portfolio',
     name:'Portfolio',
-    component:Home
+    component:Portfolio
   }
 ];
 export default routes;

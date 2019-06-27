@@ -35,7 +35,7 @@ export default class About extends Component {
                 <span>f</span>
                 <span>o</span>
               </a>
-              <a href="#" className="primary-btn" data-text="Resume">
+              <a href={process.env.PUBLIC_URL + '/file/resume.pdf'} target="_blank" className="primary-btn" data-text="Resume">
                 <span>R</span>
                 <span>e</span>
                 <span>s</span>

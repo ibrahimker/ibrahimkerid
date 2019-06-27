@@ -43,11 +43,6 @@ $(document).ready(function () {
         $('select').niceSelect();
     };
 
-    //------- Pre Loader --------//  
-    $(window).on('load', function () {
-        $(".preloader-area").delay(200).fadeOut(500);
-    })
-
     //------- Lightbox  js --------//  
     $('.img-gal').magnificPopup({
         type: 'image',
