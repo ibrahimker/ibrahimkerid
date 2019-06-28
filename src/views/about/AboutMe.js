@@ -8,12 +8,9 @@ import '../../assets/css/animate.min.css';
 import '../../assets/css/main.css';
 
 import Header from '../../components/headers/Headers';
-import Banner from '../../components/banner/Banner';
 import About from '../../components/about/About';
-import Works from '../../components/works/Works';
 import Contact from '../../components/contact/Contact';
 import Footer from '../../components/footer/Footer';
-import JobHistory from '../../components/jobhistory/JobHistory';
 import {Cube} from 'react-preloaders';
 
 import {Helmet} from "react-helmet";

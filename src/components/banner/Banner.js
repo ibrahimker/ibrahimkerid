@@ -15,7 +15,7 @@ export default class Banner extends Component {
                 <span className="designer">Software </span>
                 <span className="developer">Engineer</span>
               </div>
-              <a href="#" className="primary-btn" data-text="Hire Me">
+              <a href="#contact" className="primary-btn" data-text="Hire Me">
                 <span>H</span>
                 <span>i</span>
                 <span>r</span>

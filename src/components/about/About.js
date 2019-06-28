@@ -24,7 +24,7 @@ export default class About extends Component {
                   laughed.
                 </p>
               </div>
-              <a href="#" className="primary-btn white" data-text="More Info">
+              <a href="https://linkedin.com/in/ibrahimisbandiputra" target="_blank" rel="noopener noreferrer" className="primary-btn white" data-text="More Info">
                 <span>M</span>
                 <span>o</span>
                 <span>r</span>
@@ -35,7 +35,7 @@ export default class About extends Component {
                 <span>f</span>
                 <span>o</span>
               </a>
-              <a href={process.env.PUBLIC_URL + '/file/resume.pdf'} target="_blank" className="primary-btn" data-text="Resume">
+              <a href={process.env.PUBLIC_URL + '/file/resume.pdf'} target="_blank" rel="noopener noreferrer" className="primary-btn" data-text="Resume">
                 <span>R</span>
                 <span>e</span>
                 <span>s</span>

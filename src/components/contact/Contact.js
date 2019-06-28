@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 export default class Contact extends Component {
   render() {
     return (
-      <section className="contact-area section-gap">
+      <section id="contact" className="contact-area section-gap">
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
