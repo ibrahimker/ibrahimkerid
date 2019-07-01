@@ -18,6 +18,22 @@ import {Cube} from 'react-preloaders';
 
 import {Helmet} from "react-helmet";
 
+import { graphql,Query } from "react-apollo";
+import gql from "graphql-tag";
+
+const QUERY = gql`
+{
+  todos {
+    id
+    text
+    user {
+      id
+      name
+    }
+  }
+}
+`;
+
 export default class Home extends Component {
   componentDidMount() {
     setTimeout(()=>{
@@ -30,21 +46,34 @@ export default class Home extends Component {
 
   render() {
     return (
-      <div className="App">
-        <Helmet>
-          <title>Ibam's Site | Home</title>
-          <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"/>
-          <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700,900" rel="stylesheet"/>
-        </Helmet>
-        <Cube color='#e45447'/>
-        <Header/>
-        <Banner/>
-        <About/>
-        <Works/>
-        <JobHistory/>
-        <Contact/>
-        <Footer/>
-      </div>
+      <Query query={QUERY} returnPartialData={true}>
+        {({ data,loading, error }) => {
+        console.log(data);
+        console.log(error);
+        if (loading) {
+          return <Cube color='#e45447'/>;
+        }
+        else {
+          return (
+            <div className="App">
+              <Helmet>
+                <title>Ibam's Site | Home</title>
+                <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"/>
+                <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700,900" rel="stylesheet"/>
+              </Helmet>
+              <Cube color='#e45447'/>
+              <Header/>
+              <Banner/>
+              <About/>
+              <Works/>
+              <JobHistory/>
+              <Contact/>
+              <Footer/>
+            </div>
+          );
+        }
+        }}
+      </Query>
     );
   }
 }
