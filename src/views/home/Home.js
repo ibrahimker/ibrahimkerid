@@ -18,7 +18,7 @@ import {Cube} from 'react-preloaders';
 
 import {Helmet} from "react-helmet";
 
-import { graphql,Query } from "react-apollo";
+import { Query } from "react-apollo";
 import gql from "graphql-tag";
 
 const QUERY = gql`
@@ -35,21 +35,10 @@ const QUERY = gql`
 `;
 
 export default class Home extends Component {
-  componentDidMount() {
-    setTimeout(()=>{
-      const element = document.getElementById('preloader');
-      if(element != null) {
-        element.className += "close";
-      }
-    },500);
-  }
-
   render() {
     return (
       <Query query={QUERY} returnPartialData={true}>
         {({ data,loading, error }) => {
-        console.log(data);
-        console.log(error);
         if (loading) {
           return <Cube color='#e45447'/>;
         }

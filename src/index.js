@@ -12,8 +12,9 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 const cache = new InMemoryCache();
+
 const link = new HttpLink({
-  uri: 'http://localhost:3030/',
+  uri: 'http://localhost:3030/query'
 })
 
 const client = new ApolloClient({

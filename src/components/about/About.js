@@ -12,7 +12,7 @@ export default class About extends Component {
             </div>
             <div className="col-lg-6 col-md-12 about-right">
               <div className="section-title">
-                <h2>about myselt</h2>
+                <h2>about myself</h2>
               </div>
               <div className="mb-50 wow fadeIn" data-wow-duration=".8s">
                 <p>
