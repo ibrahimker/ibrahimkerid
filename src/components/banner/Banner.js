@@ -32,7 +32,7 @@ export default class Banner extends Component {
                         <span className="designer">{(data) ? data.banner.job1 : 'Software'} </span>
                         <span className="developer">{(data) ? data.banner.job2 : 'Developer'}</span>
                       </div>
-                      <a href="#contact" className="primary-btn" data-text="Hire Me">
+                      {/* <a href="#blog-posts" className="primary-btn" data-text="Hire Me">
                         <span>H</span>
                         <span>i</span>
                         <span>r</span>
@@ -40,7 +40,7 @@ export default class Banner extends Component {
                         <span> </span>
                         <span>M</span>
                         <span>e</span>
-                      </a>
+                      </a> */}
                     </div>
                     <div className="banner-content col-lg-5 col-md-5 align-self-end">
                       <img className="img-fluid" src={bannerImage} alt=""/>

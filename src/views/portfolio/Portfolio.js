@@ -9,7 +9,6 @@ import '../../assets/css/main.css';
 
 import Header from '../../components/headers/Headers';
 import Works from '../../components/works/Works';
-import Contact from '../../components/contact/Contact';
 import Footer from '../../components/footer/Footer';
 import JobHistory from '../../components/jobhistory/JobHistory';
 import {Cube} from 'react-preloaders';
@@ -38,7 +37,6 @@ export default class Portfolio extends Component {
         <Header/>
         <Works/>
         <JobHistory/>
-        <Contact/>
         <Footer/>
       </div>
     );

@@ -18,6 +18,8 @@ export default class Footer extends Component {
                   <h4>Follow Me</h4>
                 </div>
                 <div className="footer-social">
+                  <a href="mailto:ibrahim.nurandita@gmail.com" rel="noopener noreferrer" target="_blank"><i className="fa fa-envelope"></i></a>
+                  <a href="https://api.whatsapp.com/send?phone=6285692678181&text=Hi" rel="noopener noreferrer" target="_blank"><i className="fa fa-whatsapp"></i></a>
                   <a href="https://facebook.com/ibrahimker" rel="noopener noreferrer" target="_blank"><i className="fa fa-facebook"></i></a>
                   <a href="https://twitter.com/ibrahimker" rel="noopener noreferrer" target="_blank"><i className="fa fa-twitter"></i></a>
                   <a href="https://github.com/ibrahimker" rel="noopener noreferrer" target="_blank"><i className="fa fa-github"></i></a>
